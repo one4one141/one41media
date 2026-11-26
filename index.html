@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luke Smith — Website Design & Web Apps</title>
-  <meta name="description" content="Portfolio of Luke Smith — website design and custom web applications. Featuring TTE Global, Howard Farm, Pole Tracker, FitDaily and more." />
+  <title>one41media — Website Design & Web Apps</title>
+  <meta name="description" content="Portfolio of one41media — website design and custom web applications. Featuring TTE Global, Howard Farm, Pole Tracker, FitDaily and more." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.png" type="image/png" />
 </head>
 <body>
   <!-- Navigation -->
   <header class="header">
     <div class="container nav">
-      <a href="#home" class="logo">one4one<span>141</span></a>
+      <a href="#home" class="logo">
+        <img src="logo.png" alt="one41media" />
+        <span class="logo-text">one<span class="blue">41</span>media</span>
+      </a>
       <nav class="nav-links">
         <a href="#work">Work</a>
         <a href="#about">About</a>
@@ -33,8 +37,8 @@
       <p class="eyebrow">Website Design · Web Apps</p>
       <h1>Building clean, useful<br /><span class="gradient-text">digital experiences</span></h1>
       <p class="hero-sub">
-        I’m Luke Smith — a developer focused on practical websites and web applications 
-        that solve real problems. From cottage booking sites to field-data trackers.
+        I’m Luke Smith — founder of one41media. I design and build practical websites 
+        and web applications that solve real problems.
       </p>
       <div class="hero-actions">
         <a href="#work" class="btn btn-primary">View Projects</a>
@@ -70,22 +74,7 @@
           </a>
         </div>
         <div class="featured-visual">
-          <div class="browser-mock">
-            <div class="browser-bar">
-              <span></span><span></span><span></span>
-              <div class="url">tteglobal.com</div>
-            </div>
-            <div class="browser-content">
-              <div class="mock-hero">
-                <div class="mock-title"></div>
-                <div class="mock-sub"></div>
-                <div class="mock-cta"></div>
-              </div>
-              <div class="mock-grid">
-                <div></div><div></div><div></div>
-              </div>
-            </div>
-          </div>
+          <img src="banner-tteglobal.jpg" alt="TTE Global website preview" />
         </div>
       </div>
     </div>
@@ -103,8 +92,8 @@
       <div class="project-grid">
         <!-- Pole Tracker -->
         <article class="project-card">
-          <div class="project-visual pole">
-            <div class="icon">📍</div>
+          <div class="project-visual">
+            <img src="banner-pole-tracker.jpg" alt="Pole Tracker app" />
           </div>
           <div class="project-body">
             <h3>Pole Tracker</h3>
@@ -121,8 +110,8 @@
 
         <!-- Howard Farm -->
         <article class="project-card">
-          <div class="project-visual farm">
-            <div class="icon">🏡</div>
+          <div class="project-visual">
+            <img src="banner-howard-farm.jpg" alt="Howard Farm Cottages" />
           </div>
           <div class="project-body">
             <h3>Howard Farm Cottages</h3>
@@ -138,8 +127,8 @@
 
         <!-- FitDaily -->
         <article class="project-card">
-          <div class="project-visual fit">
-            <div class="icon">💪</div>
+          <div class="project-visual">
+            <img src="banner-fitdaily.jpg" alt="FitDaily exercise tracker" />
           </div>
           <div class="project-body">
             <h3>FitDaily</h3>
@@ -153,10 +142,10 @@
           </div>
         </article>
 
-        <!-- Poletracker (simpler) -->
+        <!-- Poletracker -->
         <article class="project-card">
-          <div class="project-visual numbers">
-            <div class="icon">📊</div>
+          <div class="project-visual">
+            <img src="banner-poletracker.jpg" alt="Poletracker daily numbers" />
           </div>
           <div class="project-body">
             <h3>Poletracker</h3>
@@ -204,6 +193,10 @@
       </div>
       <div class="about-card">
         <div class="stat">
+          <strong>Brand</strong>
+          <span>one41media</span>
+        </div>
+        <div class="stat">
           <strong>GitHub</strong>
           <a href="https://github.com/one4one141" target="_blank" rel="noopener">@one4one141</a>
         </div>
@@ -234,7 +227,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year"></span> Luke Smith · <a href="https://github.com/one4one141">one4one141</a></p>
+      <p>© <span id="year"></span> one41media · <a href="https://github.com/one4one141">one4one141</a></p>
     </div>
   </footer>
 
