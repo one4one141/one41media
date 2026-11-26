@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luke Smith — Website Design & Web Apps</title>
+  <meta name="description" content="Portfolio of Luke Smith — website design and custom web applications. Featuring TTE Global, Howard Farm, Pole Tracker, FitDaily and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="logo">one4one<span>141</span></a>
+      <nav class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/one4one141" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <p class="eyebrow">Website Design · Web Apps</p>
+      <h1>Building clean, useful<br /><span class="gradient-text">digital experiences</span></h1>
+      <p class="hero-sub">
+        I’m Luke Smith — a developer focused on practical websites and web applications 
+        that solve real problems. From cottage booking sites to field-data trackers.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">View Projects</a>
+        <a href="https://tteglobal.com/" target="_blank" rel="noopener" class="btn btn-secondary">
+          Visit TTE Global →
+        </a>
+      </div>
+    </div>
+    <div class="hero-bg"></div>
+  </section>
+
+  <!-- Featured Project -->
+  <section class="featured">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Featured</p>
+        <h2>TTE Global</h2>
+      </div>
+      <div class="featured-card">
+        <div class="featured-info">
+          <h3>Business website & digital presence</h3>
+          <p>
+            A polished, modern web presence built for TTE Global. Designed to showcase services, 
+            build trust, and convert visitors — with a clean visual language and clear messaging.
+          </p>
+          <div class="tags">
+            <span>Website Design</span>
+            <span>Brand</span>
+            <span>Responsive</span>
+          </div>
+          <a href="https://tteglobal.com/" target="_blank" rel="noopener" class="btn btn-primary">
+            Visit Site
+          </a>
+        </div>
+        <div class="featured-visual">
+          <div class="browser-mock">
+            <div class="browser-bar">
+              <span></span><span></span><span></span>
+              <div class="url">tteglobal.com</div>
+            </div>
+            <div class="browser-content">
+              <div class="mock-hero">
+                <div class="mock-title"></div>
+                <div class="mock-sub"></div>
+                <div class="mock-cta"></div>
+              </div>
+              <div class="mock-grid">
+                <div></div><div></div><div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section id="work" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects & Web Apps</h2>
+        <p class="section-desc">A selection of websites and applications from my GitHub and client work.</p>
+      </div>
+
+      <div class="project-grid">
+        <!-- Pole Tracker -->
+        <article class="project-card">
+          <div class="project-visual pole">
+            <div class="icon">📍</div>
+          </div>
+          <div class="project-body">
+            <h3>Pole Tracker</h3>
+            <p>Shared field-data web app for tracking poles. Spreadsheet upload, British National Grid, interactive maps, searchable lists, and collaborative editing — powered by Supabase + Vite.</p>
+            <div class="tags">
+              <span>TypeScript</span>
+              <span>Vite</span>
+              <span>Supabase</span>
+              <span>Maps</span>
+            </div>
+            <a href="https://github.com/one4one141/pole-tracker" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+          </div>
+        </article>
+
+        <!-- Howard Farm -->
+        <article class="project-card">
+          <div class="project-visual farm">
+            <div class="icon">🏡</div>
+          </div>
+          <div class="project-body">
+            <h3>Howard Farm Cottages</h3>
+            <p>Clean marketing website for Howard Farm Cottages. Showcasing accommodation with a gallery of property images and clear calls-to-action for bookings.</p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>Website Design</span>
+              <span>Hospitality</span>
+            </div>
+            <a href="https://github.com/one4one141/HowardFarm" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+          </div>
+        </article>
+
+        <!-- FitDaily -->
+        <article class="project-card">
+          <div class="project-visual fit">
+            <div class="icon">💪</div>
+          </div>
+          <div class="project-body">
+            <h3>FitDaily</h3>
+            <p>Lightweight daily exercise tracking web app. Simple interface focused on consistency and quick logging of workouts.</p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>Web App</span>
+              <span>Health</span>
+            </div>
+            <a href="https://github.com/one4one141/fitdaily" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+          </div>
+        </article>
+
+        <!-- Poletracker (simpler) -->
+        <article class="project-card">
+          <div class="project-visual numbers">
+            <div class="icon">📊</div>
+          </div>
+          <div class="project-body">
+            <h3>Poletracker</h3>
+            <p>Earlier daily numbers tracking tool. A focused HTML app for recording and reviewing daily metrics.</p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>Tracking</span>
+            </div>
+            <a href="https://github.com/one4one141/poletracker" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="more-projects">
+        <a href="https://github.com/one4one141" target="_blank" rel="noopener" class="btn btn-outline">
+          See all repositories on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <p class="eyebrow">About</p>
+        <h2>Practical design.<br />Useful software.</h2>
+        <p>
+          I build websites and web apps that prioritise clarity and usefulness. 
+          Whether it’s a polished business site or a specialised tool for field data, 
+          the goal is the same: something that works well for the people who use it every day.
+        </p>
+        <p>
+          Recent work spans hospitality websites, exercise tracking, and geospatial field tools 
+          with spreadsheet import, maps, and shared collaboration.
+        </p>
+        <div class="skills">
+          <span>HTML / CSS / JS</span>
+          <span>TypeScript</span>
+          <span>Vite</span>
+          <span>Supabase</span>
+          <span>Responsive Design</span>
+          <span>Web Apps</span>
+        </div>
+      </div>
+      <div class="about-card">
+        <div class="stat">
+          <strong>GitHub</strong>
+          <a href="https://github.com/one4one141" target="_blank" rel="noopener">@one4one141</a>
+        </div>
+        <div class="stat">
+          <strong>Featured Site</strong>
+          <a href="https://tteglobal.com/" target="_blank" rel="noopener">tteglobal.com</a>
+        </div>
+        <div class="stat">
+          <strong>Focus</strong>
+          <span>Websites & Web Apps</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container contact-inner">
+      <p class="eyebrow">Contact</p>
+      <h2>Let’s build something</h2>
+      <p>Interested in a new website or a custom web app? Reach out via GitHub or check out the live work.</p>
+      <div class="contact-actions">
+        <a href="https://github.com/one4one141" target="_blank" rel="noopener" class="btn btn-primary">GitHub Profile</a>
+        <a href="https://tteglobal.com/" target="_blank" rel="noopener" class="btn btn-secondary">TTE Global</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Luke Smith · <a href="https://github.com/one4one141">one4one141</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
