@@ -3,18 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luke Smith — Website Design & Web Apps</title>
-  <meta name="description" content="Portfolio of Luke Smith — website design and custom web applications. Featuring TTE Global, Howard Farm, Pole Tracker, FitDaily and more." />
+  <title>Luke Smith — Website Design & Web Apps · one41media</title>
+  <meta name="description" content="Portfolio of Luke Smith (one4one141) — website design and custom web applications. Featuring TTE Global, Howard Farm Cottages, Pole Tracker, FitDaily and more." />
+  <meta name="theme-color" content="#0a0a0f" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo-icon.png" type="image/png" />
 </head>
 <body>
   <!-- Navigation -->
   <header class="header">
     <div class="container nav">
-      <a href="#home" class="logo">one4one<span>141</span></a>
+      <a href="#home" class="logo">
+        <img src="logo-icon.png" alt="" class="logo-icon" width="28" height="28" />
+        one4one<span>141</span>
+      </a>
       <nav class="nav-links">
         <a href="#work">Work</a>
         <a href="#about">About</a>
@@ -30,11 +35,11 @@
   <!-- Hero -->
   <section id="home" class="hero">
     <div class="container hero-content">
-      <p class="eyebrow">Website Design · Web Apps</p>
+      <p class="eyebrow">Website Design · Web Apps · one41media</p>
       <h1>Building clean, useful<br /><span class="gradient-text">digital experiences</span></h1>
       <p class="hero-sub">
-        I’m Luke Smith — a developer focused on practical websites and web applications 
-        that solve real problems. From cottage booking sites to field-data trackers.
+        I’m Luke Smith — a developer focused on practical websites and web applications
+        that solve real problems. From hospitality sites to geospatial field tools.
       </p>
       <div class="hero-actions">
         <a href="#work" class="btn btn-primary">View Projects</a>
@@ -46,53 +51,49 @@
     <div class="hero-bg"></div>
   </section>
 
-  <!-- Featured Project -->
+  <!-- Featured: TTE Global -->
   <section class="featured">
     <div class="container">
       <div class="section-header">
-        <p class="eyebrow">Featured</p>
+        <p class="eyebrow">Featured Project</p>
         <h2>TTE Global</h2>
       </div>
-      <div class="featured-card">
+
+      <a href="https://tteglobal.com/" target="_blank" rel="noopener" class="featured-banner">
+        <img src="banner-tteglobal.jpg" alt="TTE Global website preview — modern dark interface with cyan accents" />
+        <div class="featured-overlay">
+          <div class="featured-badge">Live Site</div>
+          <div class="featured-cta">
+            <span>Visit tteglobal.com</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <div class="featured-meta">
         <div class="featured-info">
           <h3>Business website & digital presence</h3>
           <p>
-            A polished, modern web presence built for TTE Global. Designed to showcase services, 
-            build trust, and convert visitors — with a clean visual language and clear messaging.
+            A polished, modern web presence built for TTE Global. Designed to showcase
+            performance motorsport parts, build trust, and convert visitors — with a clean
+            visual language and clear product messaging.
           </p>
           <div class="tags">
             <span>Website Design</span>
             <span>Brand</span>
             <span>Responsive</span>
+            <span>E-commerce</span>
           </div>
-          <a href="https://tteglobal.com/" target="_blank" rel="noopener" class="btn btn-primary">
-            Visit Site
-          </a>
         </div>
-        <div class="featured-visual">
-          <div class="browser-mock">
-            <div class="browser-bar">
-              <span></span><span></span><span></span>
-              <div class="url">tteglobal.com</div>
-            </div>
-            <div class="browser-content">
-              <div class="mock-hero">
-                <div class="mock-title"></div>
-                <div class="mock-sub"></div>
-                <div class="mock-cta"></div>
-              </div>
-              <div class="mock-grid">
-                <div></div><div></div><div></div>
-              </div>
-            </div>
-          </div>
+        <div class="featured-actions">
+          <a href="https://tteglobal.com/" target="_blank" rel="noopener" class="btn btn-primary">Visit Live Site</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Projects Grid -->
-  <section id="work" class="projects">
+  <section id="work" class="work">
     <div class="container">
       <div class="section-header">
         <p class="eyebrow">Selected Work</p>
@@ -103,69 +104,91 @@
       <div class="project-grid">
         <!-- Pole Tracker -->
         <article class="project-card">
-          <div class="project-visual pole">
-            <div class="icon">📍</div>
-          </div>
+          <a href="https://github.com/one4one141/pole-tracker" target="_blank" rel="noopener" class="project-image">
+            <img src="banner-pole-tracker.jpg" alt="Pole Tracker — map-based field data app with location markers" loading="lazy" />
+          </a>
           <div class="project-body">
             <h3>Pole Tracker</h3>
-            <p>Shared field-data web app for tracking poles. Spreadsheet upload, British National Grid, interactive maps, searchable lists, and collaborative editing — powered by Supabase + Vite.</p>
+            <p>
+              Shared field-data web app for tracking poles. Spreadsheet upload, British
+              National Grid references, interactive maps, searchable lists, and collaborative
+              editing — powered by Supabase + Vite.
+            </p>
             <div class="tags">
               <span>TypeScript</span>
               <span>Vite</span>
               <span>Supabase</span>
               <span>Maps</span>
             </div>
-            <a href="https://github.com/one4one141/pole-tracker" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+            <a href="https://github.com/one4one141/pole-tracker" target="_blank" rel="noopener" class="project-link">
+              View on GitHub →
+            </a>
           </div>
         </article>
 
         <!-- Howard Farm -->
         <article class="project-card">
-          <div class="project-visual farm">
-            <div class="icon">🏡</div>
-          </div>
+          <a href="https://github.com/one4one141/HowardFarm" target="_blank" rel="noopener" class="project-image">
+            <img src="banner-howard-farm.jpg" alt="Howard Farm Cottages — countryside hospitality website" loading="lazy" />
+          </a>
           <div class="project-body">
             <h3>Howard Farm Cottages</h3>
-            <p>Clean marketing website for Howard Farm Cottages. Showcasing accommodation with a gallery of property images and clear calls-to-action for bookings.</p>
+            <p>
+              Clean marketing website for Howard Farm Cottages. Showcasing accommodation
+              with a gallery of property images and clear calls-to-action for bookings.
+            </p>
             <div class="tags">
               <span>HTML</span>
               <span>Website Design</span>
               <span>Hospitality</span>
             </div>
-            <a href="https://github.com/one4one141/HowardFarm" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+            <a href="https://github.com/one4one141/HowardFarm" target="_blank" rel="noopener" class="project-link">
+              View on GitHub →
+            </a>
           </div>
         </article>
 
         <!-- FitDaily -->
         <article class="project-card">
-          <div class="project-visual fit">
-            <div class="icon">💪</div>
-          </div>
+          <a href="https://github.com/one4one141/fitdaily" target="_blank" rel="noopener" class="project-image">
+            <img src="banner-fitdaily.jpg" alt="FitDaily — daily exercise tracking dashboard" loading="lazy" />
+          </a>
           <div class="project-body">
             <h3>FitDaily</h3>
-            <p>Lightweight daily exercise tracking web app. Simple interface focused on consistency and quick logging of workouts.</p>
+            <p>
+              Lightweight daily exercise tracking web app. Simple interface focused on
+              consistency and quick logging of workouts, steps, and progress.
+            </p>
             <div class="tags">
               <span>HTML</span>
               <span>Web App</span>
               <span>Health</span>
             </div>
-            <a href="https://github.com/one4one141/fitdaily" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+            <a href="https://github.com/one4one141/fitdaily" target="_blank" rel="noopener" class="project-link">
+              View on GitHub →
+            </a>
           </div>
         </article>
 
-        <!-- Poletracker (simpler) -->
+        <!-- Poletracker -->
         <article class="project-card">
-          <div class="project-visual numbers">
-            <div class="icon">📊</div>
-          </div>
+          <a href="https://github.com/one4one141/poletracker" target="_blank" rel="noopener" class="project-image">
+            <img src="banner-poletracker.jpg" alt="Poletracker — daily numbers and metrics dashboard" loading="lazy" />
+          </a>
           <div class="project-body">
             <h3>Poletracker</h3>
-            <p>Earlier daily numbers tracking tool. A focused HTML app for recording and reviewing daily metrics.</p>
+            <p>
+              Earlier daily numbers tracking tool. A focused HTML app for recording and
+              reviewing daily metrics with clear overview dashboards.
+            </p>
             <div class="tags">
               <span>HTML</span>
               <span>Tracking</span>
+              <span>Dashboard</span>
             </div>
-            <a href="https://github.com/one4one141/poletracker" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+            <a href="https://github.com/one4one141/poletracker" target="_blank" rel="noopener" class="project-link">
+              View on GitHub →
+            </a>
           </div>
         </article>
       </div>
@@ -185,13 +208,13 @@
         <p class="eyebrow">About</p>
         <h2>Practical design.<br />Useful software.</h2>
         <p>
-          I build websites and web apps that prioritise clarity and usefulness. 
-          Whether it’s a polished business site or a specialised tool for field data, 
+          I build websites and web apps that prioritise clarity and usefulness.
+          Whether it’s a polished business site or a specialised tool for field data,
           the goal is the same: something that works well for the people who use it every day.
         </p>
         <p>
-          Recent work spans hospitality websites, exercise tracking, and geospatial field tools 
-          with spreadsheet import, maps, and shared collaboration.
+          Recent work spans hospitality websites, exercise tracking, and geospatial field
+          tools with spreadsheet import, maps, and shared collaboration.
         </p>
         <div class="skills">
           <span>HTML / CSS / JS</span>
@@ -215,6 +238,10 @@
           <strong>Focus</strong>
           <span>Websites & Web Apps</span>
         </div>
+        <div class="stat">
+          <strong>Brand</strong>
+          <span>one41media</span>
+        </div>
       </div>
     </div>
   </section>
@@ -234,7 +261,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year"></span> Luke Smith · <a href="https://github.com/one4one141">one4one141</a></p>
+      <p>© <span id="year"></span> Luke Smith · <a href="https://github.com/one4one141">one4one141</a> · one41media</p>
     </div>
   </footer>
 
